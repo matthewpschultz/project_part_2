@@ -1,0 +1,139 @@
+/* basic CSS sheet for the Sharpsburg Web Site */
+
+/* set columns for page data for main page */
+.column-left {
+  float: left;
+  width: 25%;
+  margin-left: 5px;
+ }
+.column-center {
+  display: inline-block;
+  width: 45%;
+}
+.border-center {
+  border-style: outset;
+  border-color: DodgerBlue;
+  border-width: 1;
+}
+.column-right {
+  float: right;
+  width: 29%;
+  margin-right: 5px;
+}
+/* set columns for about us page */
+.column-narrow {
+  float: left;
+  width: 25%;
+}
+.column-wide {
+  display:inline-block;
+  width:60%;
+  margin-top:15px;
+}
+.bold-font {
+  font-size:15px;
+}
+.big-font {
+  font-size:30px;
+}
+.courier {
+  font-style: courier;
+}
+.faint-border-top {
+  border-top: 2px;
+  border-color: gray;
+}
+
+
+/* set some basic structure for the sections */
+body {
+  background: linear-gradient(to right bottom, #0099ff, #f2f2f2);
+  width:1600px;
+  height:1000px;
+  margin:0 auto;
+}
+p1 span {
+  font-size: 13px;
+  display: block;
+  padding-right: 5%
+}
+p2 span {
+  font-size:95%;
+  text-align: justify;
+  padding-right: 5%;
+  padding-left: 5%;
+  display: block;
+}
+p3 span {
+  font-size: 95%;
+  text-align: justify;
+  display: block;
+  padding-left: 5%;
+}
+h4 {
+border-bottom: 2px;
+  border-color: darkgray;
+  font-size:18px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: DodgerBlue;
+}
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+li a: hover {
+  background-color: Black;
+}
+
+/*set some text attributes */
+.sharpsburgblue {
+  color: DodgerBlue;
+}
+
+/* Some id specific attributes */
+#sharpsburgemblem {
+  padding-bottom: 5px;
+}
+
+#sharpsburgaerial {
+  /* force the image to width of the column- center container */
+  width: 90%;
+  height: 500px;
+  padding-left: 5%;
+  padding-top: 15px;
+}
+#sharpsburgaerial-about {
+  width: 90%;
+  height: 600px;
+  padding-left: 5%;
+  padding-right:10%;
+  padding-top: 20px;
+}
+
+#optimusprimecasual {
+  width: 90%;
+  height: 600px;
+  padding-left: 5%;
+  padding-top: 15px;
+}
+
+#map {
+  height: 475px;
+  width:95%;
+}
+#wrap {
+  width:100&37;
+  background: white;
+
+}
