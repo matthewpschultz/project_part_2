@@ -25,6 +25,9 @@ function verifyFormValues() {
     alert("Phone number can not be left blank");
     return false;
   }
+  if (hour < 8) {
+    alert("Hour must be between 8 and 16");
+  }
   else {
     // Clear the Form
     document.getElementById("inspectionForm").style.display="none";

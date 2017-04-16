@@ -34,5 +34,10 @@
       </p1>
   </div>
   </div>
+  <div class="footer-regular">
+    <?php
+      spawn_footer();
+    ?>
+  </div>
   </body>
 </html>

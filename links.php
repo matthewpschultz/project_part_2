@@ -3,6 +3,9 @@
        Author:Matthew P. Schultz
        Date Modified: 15 April 2017
 -->
+<?php
+  include "primarySharpsburg.php";
+?>
 <html>
   <head>
     <title>Sharpsburg Borough Web Site</title>
@@ -12,15 +15,14 @@
   <body>
   <div id="wrap">
   <div>
-    <a href="index.php">
-      <img src="Images/SharpsburgEmblemCustomMatt1.jpg" id=sharpsburgemblem alt="Sharpsburg Emblem Custom Matt 1"/>
-    </a>
+    <?php
+      spawn_header();
+    ?>
   </div>
   <div>
     <!-- The navigation bar called from a separate file -->
     <div>
       <?php
-        include "primarySharpsburg.php";
         spawn_navbar();
       ?>
   </div>
@@ -33,6 +35,10 @@
         </a>
       </p1>
   </div>
+  <div class="footer-regular">
+    <?php
+      spawn_footer();
+    ?>
   </div>
   </body>
 </html>

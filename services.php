@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<!-- Description: services main page
+<!-- Description: services page
        Author:Matthew P. Schultz
        Date Modified: 15 April 2017
 -->
+<?php
+  include "primarySharpsburg.php";
+?>
 <html>
   <head>
     <title>Sharpsburg Borough Web Site</title>
@@ -13,22 +16,16 @@
   <div id="wrap">
   <!-- force image header to be separated frm the columns below -->
   <div>
-    <a href="index.php">
-      <img src="Images/SharpsburgEmblemCustomMatt1.jpg" id=sharpsburgemblem alt="Sharpsburg Emblem Custom Matt 1"/>
-    </a>
+    <?php
+      spawn_header();
+    ?>
   </div>
-  <!-- The navigation bar. Most of these do not work -->
   <div>
-    <ul>
-      <li><a href="aboutUs.php">ABOUT US</a></li>
-      <li><a href="services.php">SERVICES</a></li>
-      <li><a href="forms.php">FORMS AND APPLICATIONS</a></li>
-      <li><a href="business.php">BUSINESS LIST</a></li>
-      <li><a href="calendar.php">CALENDAR</a></li>
-      <li><a href="contact.php">CONTACT</a></li>
-      <li><a href="swift911.php">SWIFT 911</a></li>
-      <li><a href="links.php">LINKS</a></li>
-    </ul>
+    <!-- The navigation bar called from a separate file -->
+    <div>
+      <?php
+        spawn_navbar();
+      ?>
   </div>
   <div class="column-services-left border-center">
     <h2 class="sharpsburgblue">Services</h3>
@@ -59,6 +56,11 @@
   <div class="column-services-right">
     <img src="Images/house_blueprint_image.jpg" id=houseBlueprint alt="House stylized design layout"/>
   </div>
+  </div>
+  <div class="footer-regular">
+    <?php
+      spawn_footer();
+    ?>
   </div>
   </body>
 </html>

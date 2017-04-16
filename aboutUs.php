@@ -3,6 +3,9 @@
        Author:Matthew P. Schultz
        Date Modified: 15 April 2017
 -->
+<?php
+  include "primarySharpsburg.php";
+?>
 <html>
   <head>
     <title>Sharpsburg Borough Web Site</title>
@@ -16,14 +19,13 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRWKROd3jTNPgAyPGZ-NE7-jNUnfu4YDk&callback=initMap"></script>
   <!-- force image header to be separated from the columns below -->
   <div>
-    <a href="index.php">
-      <img src="Images/SharpsburgEmblemCustomMatt1.jpg" id=sharpsburgemblem alt="Sharpsburg Emblem Custom Matt 1"/>
-    </a>
+    <?php
+      spawn_header();
+    ?>
   </div>
   <!-- The navigation bar called from a separate file -->
   <div>
     <?php
-      include "primarySharpsburg.php";
       spawn_navbar();
     ?>
   </div>
@@ -76,6 +78,11 @@
         </span>
         <br>
   </div>
+  </div>
+  <div class="footer-about">
+    <?php
+      spawn_footer();
+    ?>
   </div>
   </body>
 </html>
