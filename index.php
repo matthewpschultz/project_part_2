@@ -60,12 +60,15 @@
       <div class="column-right">
         <h3 class="sharpsburgblue">Events</h3>
           <p3>
-            <span>Optimus Prime at the Sharpsburg Community Center 15 May 2017 from 5:00pm - 7:pm!</span>
+            <div id="movetxt">
+              <?php
+                populate_events();
+              ?>
+            </div>
           </p3>
-          <img src="Images/350px-Optimusg1.jpg" id=optimusprimecasual alt="Optimus Prime. Stolen from the web. Filling up space on part of the site I don't plan to build."/>
       </div>
     </div>
-    <div class="footer-regular">
+    <div class="footer">
       <?php
         spawn_footer();
       ?>

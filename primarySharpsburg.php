@@ -22,4 +22,23 @@
     echo "Copyright 2017, Schultz inc.<br>";
   }
 
+  function populate_events() {
+    $event_items = array ("<span><strong><font color='red'>Special Elections</font></strong></span>
+    <p4><span> Special elections for Mayor to be held at the Sharpsburg community center due to the
+    early retirement of outgoing Mayor Chuck Norris. Election will
+    be held May 16th, 8am to 8pm. Please support your candidates Dwayne \"the Rock\" Johnson and
+    Melissa McCarthy. Your vote counts!</span></p4>
+    <br>",
+    "<span><strong><font color='red'>Council Meetings</font></strong></span>
+    <p4><span> Council meetings are held every 2nd Thursday of the month at the Sharpburg Municipal Building
+    in the Council Chambers starting at 6:00pm. We promise these aren't super boring!</span></p4>
+    <br>",
+    "<span><strong><font color='red'>Farmers Market</font></strong></span>
+    <p4><span> The Farmers Market runs from April 1st through September 31st in the Parking lot at
+    the corner of Main and 15th Street. Eat healthy and support your local farmers. </span></p4>");
+
+    foreach ($event_items as $event_item) {
+      echo $event_item;
+    }
+  }
 ?>

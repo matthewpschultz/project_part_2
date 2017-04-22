@@ -30,11 +30,11 @@
         ?>
       </div>
 
-    <h2 class="sharpsburgblue">Welcome to the borough of Sharpsburg inspection site!</h2>
+    <h2 class="sharpsburgblue">Sharpsburg inspection Form</h2>
     <h3 class="fontfancy">Description</h3>
-      <p2>Hello. This form is to request scheduling of borough inspections.
-        Please fill out the information below and we will get<br> back to you within 2
-        business days to confirm a time. If you have any questions please contact
+      <p2>This form is to schedule a borough building inspection.
+        Please fill out the information below. If there are any issues with your<br>appointment we
+        will call you within 2 business days to discuss. If you have any questions please contact
         us at 555-123-4567.<br>
       </p2>
       <!-- form for requesting an inspection appointment -->
@@ -64,6 +64,11 @@
               <input type="submit" id="formSubmit" name="submitto" value="Submit" onclick="verifyFormValues();">
             </form>
           </div>
+        </div>
+        <div class="footer-form">
+          <?php
+            spawn_footer();
+          ?>
         </div>
     </body>
 </html>

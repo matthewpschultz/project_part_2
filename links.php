@@ -28,14 +28,12 @@
   </div>
   <!-- I got nothing. Here is the hamster dance as a place holder -->
   <div class="column-wide">
-    <h3 class="sharpsburgblue">Real Content coming soon! For now enjoy the hamster dance! </h3>
+    <h3 class="sharpsburgblue">Page is under construction. Check back soon. </h3>
       <p1>
-        <a href=https://www.youtube.com/watch?v=6WpMlwVwydo>
-          <img src="Images/hamsterdanceyoutube.jpg" id=hamstersdancing alt="Hey it's a classic and I'm kinda old!"/>
-        </a>
+        <img src="Images/Website-Under-Construction.jpg" id=page under contruction alt="This page is under construction"/>
       </p1>
   </div>
-  <div class="footer-regular">
+  <div class="footer">
     <?php
       spawn_footer();
     ?>

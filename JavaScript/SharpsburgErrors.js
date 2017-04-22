@@ -7,6 +7,7 @@ function verifyFormValues() {
   var lastname = document.getElementById("lastname").value;
   var address = document.getElementById("address").value;
   var phonenumber = document.getElementById("phonenumber").value;
+  var hour = document.getElementById("hour").value
   var form = document.getElementById("inspectionForm").value;
 
   if (firstname == "") {
@@ -25,7 +26,7 @@ function verifyFormValues() {
     alert("Phone number can not be left blank");
     return false;
   }
-  if (hour < 8) {
+  if (Number(hour) < 8 || Number(hour) > 16) {
     alert("Hour must be between 8 and 16");
   }
   else {

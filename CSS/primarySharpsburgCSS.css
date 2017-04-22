@@ -52,14 +52,20 @@
   border-top: 2px;
   border-color: gray;
 }
-.footer-regular{
+.footer, .push {
+  position: absolute;
+  bottom: -84;
+  width: 1600px;
+  height:50px;
+  text-align: left;
+}
+.footer-form {
   position: absolute;
   bottom: 0;
   width: 1600px;
   height:50px;
   text-align: left;
 }
-
 /* set some basic structure for the sections */
 body {
   background: linear-gradient(to right bottom, #0099ff, #f2f2f2);
@@ -85,6 +91,10 @@ p3 span {
   display: block;
   padding-left: 5%;
 }
+p4 span {
+  text-indent: 5px;
+}
+
 h4 {
 border-bottom: 2px;
   border-color: darkgray;
@@ -92,7 +102,7 @@ border-bottom: 2px;
 }
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0;var phonenumber = document.getElementById("phonenumber").value
   margin: 0;
   overflow: hidden;
   background-color: DodgerBlue;
@@ -154,4 +164,13 @@ he column- center container */
   width:100&37;
   background: white;
 
+}
+#movetxt {
+    position: relative;
+    -webkit-animation: moving 5s;
+    animation: moving 8s;
+}
+@keyframes moving {
+    from {transform: translateY(540px);}
+    to {transform: translateY(0px);}
 }

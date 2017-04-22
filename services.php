@@ -57,7 +57,7 @@
     <img src="Images/house_blueprint_image.jpg" id=houseBlueprint alt="House stylized design layout"/>
   </div>
   </div>
-  <div class="footer-regular">
+  <div class="footer">
     <?php
       spawn_footer();
     ?>
